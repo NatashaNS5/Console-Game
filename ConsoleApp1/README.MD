@@ -17,63 +17,43 @@ class User {
  var hero: Hero
 }
 
+### Персонаж
+class Personage
+{
+    var name: String
+    // Максимальное здоровье
+    var health: UInt
+    // Текущее здоровье
+    var currentHealth: UInt
+    // Сила
+    var strong: Int
+    // Защита
+    var protected: Int
+    // Уровень
+    var level: UInt
+    // Минимальная атака
+    var minAttack: Int
+     // Максимальная атака
+    var maxAttack: Int
+}
+
 ### Герой
-class Hero {
-  var name: String
-  // Максимальное здоровье
-  var health: UInt
-  // Текущее здоровье
-  var currentHealth: UInt
-  // Сила
-  var strong: Int
-  // Защита
-  var protected: Int
-  // Уровень
-  var level: UInt
-  // Опыт
-  var exp: UInt
-  // Минимальная атака
-  var minAttack: Int
-  // Максимальная атака
-  var maxAttack: Int
+class Hero: Personage
+ {
+    // Опыт
+    var exp: UInt
 }
 
 ### Противник
-class Opponent {
-    var name: String
-    // Максимальное здоровье
-    var health: UInt
-    // Текущее здоровье
-    var currentHealth: UInt
-    // Сила
-    var strong: Int
-    // Защита
-    var protected: Int
-    // Уровень
-    var level: UInt
-    // Минимальная атака
-    var minAttack: Int
-    // Максимальная атака
-    var maxAttack: Int
+class Opponent: Personage
+{
+
 }
 
 ### Босс
-class Boss {
-    var name: String
-    // Максимальное здоровье
-    var health: UInt
-    // Текущее здоровье
-    var currentHealth: UInt
-    // Сила
-    var strong: Int
-    // Защита
-    var protected: Int
-    // Уровень
-    var level: UInt
-    // Минимальная атака
-    var minAttack: Int
-    // Максимальная атака
-    var maxAttack: Int
+class Boss: Personage
+{
+
 }
 
 ### Уровень
